@@ -1,0 +1,34 @@
+name: openssh-server-gael
+version: "8.9"
+base: core22
+summary: OpenSSH server
+description: |
+  The SSH2 protocol implemented in OpenSSH is standardized by the IETF secsh working group and is specified in several RFCs and drafts. The overall structure of SSH2 is described in the architecture RFC.
+
+grade: stable
+confinement: strict
+
+architectures:
+  - build-on: amd64
+
+license: "BSD-3-Clause"
+
+apps:
+  sshd:
+    command: usr/sbin/sshd -f $SNAP_DATA/sshd_config
+    daemon: simple
+    install-mode: disable
+    plugs:
+      - network
+      - network-bind
+      - home
+
+  ssh-keygen:
+    command: usr/bin/ssh-keygen
+
+parts:
+  openssh:
+    plugin: nil
+    stage-packages:
+      - openssh-server
+      - openssh-client
