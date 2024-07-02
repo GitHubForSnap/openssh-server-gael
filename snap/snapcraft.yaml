@@ -1,6 +1,6 @@
 name: openssh-server-gael
-version: "8.9"
-base: core22
+version: "v9.6"
+base: core24
 summary: OpenSSH server
 description: |
   The SSH2 protocol implemented in OpenSSH is standardized by the IETF secsh working group and is specified in several RFCs and drafts. The overall structure of SSH2 is described in the architecture RFC.
@@ -8,8 +8,8 @@ description: |
 grade: stable
 confinement: strict
 
-architectures:
-  - build-on: amd64
+platforms:
+  amd64:
 
 license: "BSD-3-Clause"
 
