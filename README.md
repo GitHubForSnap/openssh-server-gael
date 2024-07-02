@@ -6,7 +6,7 @@ The SSH2 protocol implemented in OpenSSH is standardized by the IETF secsh worki
 
 **Installation**
 
-`sudo snap install openssh-server-gael_8.9_amd64.snap --devmode`
+`sudo snap install openssh-server-gael_v9.6_amd64.snap --devmode`
 
 **First use**
 
