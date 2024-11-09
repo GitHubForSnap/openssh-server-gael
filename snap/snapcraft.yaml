@@ -1,5 +1,5 @@
 name: openssh-server-gael
-version: "v9.6"
+version: "v9.6-20241109"
 base: core24
 summary: OpenSSH server
 description: |
