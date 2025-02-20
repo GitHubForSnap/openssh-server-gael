@@ -24,6 +24,10 @@ The SSH2 protocol implemented in OpenSSH is standardized by the IETF secsh worki
 * Read the logs
 `sudo snap logs -n 30 openssh-server-gael.sshd`
 
+**2025-02-20**
+
+* New build
+
 **2024-11-09**
 
 * New build
